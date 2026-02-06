@@ -1,0 +1,5 @@
+__pycache__/
+goodbyeworld.proto
+goodbyeworld_pb2.py
+goodbyeworld_pb2.pyi
+goodbyeworld_pb2_grpc.py
