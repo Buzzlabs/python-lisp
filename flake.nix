@@ -10,14 +10,18 @@
       let
         pkgs = import nixpkgs { inherit system; };
         python = pkgs.python313;
+        pythonPackages = python.pkgs;
       in
       {
         devShells.default = pkgs.mkShell {
           nativeBuildInputs = [ pkgs.bashInteractive ];
           buildInputs = with pythonPackages; [
             python
-            pythonPackages.matplotlib
-            pythonPackages.numpy
+            matplotlib
+            numpy
+            pkgs.hy
+            grpcio
+            grpcio-tools
           ];
         };
       });
