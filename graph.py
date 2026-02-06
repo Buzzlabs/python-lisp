@@ -16,15 +16,15 @@ ax.set_xticks([-1, -0.75, -0.5, -0.25, 0, 0.25, 0.5, 0.75, 1], ['Compile Time', 
 ax.set_yticks([-1, -0.75, -0.5, -0.25, 0, 0.25, 0.5, 0.75, 1], ['Simplicity', '', '', '', '', '', '', '', 'Multi Paradigm'])
 ax.set_zticks([-1, -0.75, -0.5, -0.25, 0, 0.25, 0.5, 0.75, 1], ['Bits', '', '', '', '', '', '', '', 'Data Structures'], rotation=0, ha='right')
 
-ax.tick_params(axis='x', pad=5)
+ax.tick_params(axis='x', pad=20)
 ax.tick_params(axis='y', pad=15)
-ax.tick_params(axis='z', pad=15)
+ax.tick_params(axis='z', pad=5)
 
 ax.set_xlim(-1, 1)
 ax.set_ylim(-1, 1)
 ax.set_zlim(-1, 1)
 
-ax.view_init(elev=20, azim=45)
+ax.view_init(elev=-47, azim=-50, roll=-124)
 
 # ('h', 'H', '.', 'P', 'X')
 
