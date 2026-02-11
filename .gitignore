@@ -3,3 +3,6 @@ goodbyeworld.proto
 goodbyeworld_pb2.py
 goodbyeworld_pb2.pyi
 goodbyeworld_pb2_grpc.py
+helloworld_pb2.py
+helloworld_pb2.pyi
+helloworld_pb2_grpc.py
