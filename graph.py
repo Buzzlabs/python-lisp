@@ -26,18 +26,16 @@ ax.set_zlim(-1, 1)
 
 ax.view_init(elev=-37, azim=-146, roll=-45)
 
-# ('h', 'H', '.', 'P', 'X')
-
-ax.scatter(0.5, 0.5, 0.75, color='blue', s=50, marker='o', label='Metaclasses') 
-ax.scatter(0.75, 0.5, 0.75, color='blue', s=50, marker='D', label='Class Decorators')
+ax.scatter(0.5, 0.5, 1, color='blue', s=50, marker='o', label='Metaclasses') 
+ax.scatter(0.75, 0.5, 1, color='blue', s=50, marker='D', label='Class Decorators')
 ax.scatter(0.75, -0.25, 1, color='blue', s=50, marker='d', label='Function/Method Decorators')
 ax.scatter(0.75, 0.5, -0.5, color='blue', s=50, marker='v', label='Eval/Exec') 
-ax.scatter(-0.5, -0.5, 1, color='blue', s=50, marker='^', label='Procedural Macros') 
+ax.scatter(-0.75, -0.5, 1, color='blue', s=50, marker='^', label='Procedural Macros') 
 ax.scatter(-1, 0, -0.75, color='black', s=50, marker='<', label='Preprocessor') 
-ax.scatter(-1, 0, 0, color='black', s=50, marker='>', label='Templates') # TODO: study more
+ax.scatter(-0.75, 0.5, 1, color='black', s=50, marker='>', label='Templates')
 ax.scatter(1, -1, 1, color='black', s=50, marker='8', label='Fexprs') 
-ax.scatter(-0.75, -0.5, 0.5, color='black', s=50, marker='s', label='Comptime') 
-ax.scatter(-0.75, 0.5, 1, color='black', s=50, marker='p', label='Hygienic Macros') 
+ax.scatter(-0.75, -0.75, 0.75, color='black', s=50, marker='s', label='Comptime') 
+ax.scatter(-0.75, 0.75, 1, color='black', s=50, marker='p', label='Hygienic Macros') 
 ax.scatter(-1, 1, -0.5, color='black', s=50, marker='*', label='Reader Macros') 
 
 ax.legend(loc='center left', bbox_to_anchor=(1.1, 0.5))
