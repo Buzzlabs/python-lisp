@@ -2,7 +2,8 @@ import matplotlib.pyplot as plt
 from mpl_toolkits.mplot3d import Axes3D
 
 fig = plt.figure()
-ax = plt.axes(projection='3d')
+ax = plt.axes(projection='3d', proj_type='ortho')
+ax.set_aspect('equal')
 
 ax.zaxis.set_rotate_label(False)
 
@@ -24,7 +25,7 @@ ax.set_xlim(-1, 1)
 ax.set_ylim(-1, 1)
 ax.set_zlim(-1, 1)
 
-ax.view_init(elev=-37, azim=-146, roll=-45)
+ax.view_init(elev=-40, azim=-135, roll=-60)
 
 ax.scatter(0.5, 0.5, 1, color='blue', s=50, marker='o', label='Metaclasses') 
 ax.scatter(0.75, 0.5, 1, color='blue', s=50, marker='D', label='Class Decorators')
