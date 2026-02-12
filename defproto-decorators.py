@@ -93,7 +93,7 @@ def defproto(*, use: str, path: str):
 
     return decorator
 
-@defproto(use="existing", path="helloworld.proto")
+@defproto(use="existing", path="../protos/helloworld.proto")
 class Greeter:
 
     def SayHello(self, request, context):
