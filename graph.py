@@ -25,7 +25,7 @@ ax.set_xlim(-1, 1)
 ax.set_ylim(-1, 1)
 ax.set_zlim(-1, 1)
 
-ax.view_init(elev=-40, azim=-135, roll=-60)
+ax.view_init(elev=-40, azim=-136, roll=-56)
 
 ax.scatter(0.5, 0.5, 1, color='blue', s=50, marker='o', label='Metaclasses') 
 ax.scatter(0.75, 0.5, 1, color='blue', s=50, marker='D', label='Class Decorators')
